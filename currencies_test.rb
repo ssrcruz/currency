@@ -47,7 +47,7 @@ class CurrenciesTest < MiniTest::Test
 
   def test_06_multiply_fixnum_float
     your_dollars = Currency.new(10, "USD")
-        asset_equal 44, your_dollars * 4.4
+        assert_equal 44, your_dollars * 4.4  
   end
 
 end
