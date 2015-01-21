@@ -8,12 +8,12 @@ class Currency
 
 
   def ==(other)
-    amount == other.amount
+    @amount == other.amount
   end
 
   def +(other)
-    if self.code == self.amount
-      Currency.new(amount + other.amount)
+    if @currency_code == other.code
+      Currency.new(@code, @currency_amount + other.amount)
     else
       raise DifferentCurrencyCodeError
     end
