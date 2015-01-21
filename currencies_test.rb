@@ -22,13 +22,13 @@ class CurrenciesTest < MiniTest::Test
   def test_03_currency_adds
     your_dollars = Currency.new(10, "USD")
     other_dollars = Currency.new(5, "USD")
-    assert true, your_dollars + other_dollars
+    assert_equal true, your_dollars + other_dollars
   end
 
   def test_04_currency_subtracts
     your_dollars = Currency.new(10, "USD")
     other_dollars = Currency.new(1, "USD")
-    assert true, your_dollars - other_dollars
+    assert_equal true, your_dollars - other_dollars
   end
 
 end

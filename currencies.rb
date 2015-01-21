@@ -7,15 +7,15 @@ class Currency
   end
 
 
-  def ==(your_dollars)
+  def ==(other_dollars)
     amount == other_dollars.amount
   end
 
-  def +(your_dollars)
+  def +(other_dollars)
     Currency.new(amount + other_dollars.amount)
   end
 
-  def -(your_dollars)
+  def -(other_dollars)
     Currency.new(amount - other_dollars.amount)
   end
 end
